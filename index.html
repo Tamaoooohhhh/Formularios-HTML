@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio </a>
+            <a href="login.html">Login </a>
+            <a href="registro.html">Registro</a>
+        </nav>
+        <h1>Formularios en HTML</h1>
+    </header>
+
+<main>
+    <section>
+        <form action="">
+            <fieldset>
+                <legend>Texto</legend>
+                <p>Campos de texto básicos: simple, con placeholder obligatorio (required), de solo lectura (readonly) y deshabilitado (disabled).</p>
+            
+
+            <label for""">Input tipo texto</label>
+            <input type"text">
+            <br>
+
+            <label for="">Campo obligatorio requerido<label>
+            <input type="text" placeholder="Campo obligatorio" required>
+            <br>
+
+            <label for="">Campo solo lectura readonly</label>
+            <input type="text" placeholder="Campo solo lectura" readonly>
+            <br>
+
+            <label for=""> Campo deshabilitado disabled</label>
+            <input type="text" placeholder="Campo deshabilitado" disabled>
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Campos especializados para datos de contacto: Contraseña, correo electrónico, teléfono, URL, cada uno con su propio teclado y validación en el navegador.</p>
+
+            <label for="">Contraseña</label>
+            <input type="password" placeholder="********" required>
+            <br>
+
+            <label for="">Correo electrónico</label>
+            <input type="email" placeholder="tucorreo@dominio.com" required>
+            <br>
+
+            <label for="">Número de teléfono</label>
+            <input type="number" placeholder="+57 3224509120" required>
+            <br>
+
+            <label for="">URL</label>
+            <input type="url" placeholder="https://www.ejemplo.com">
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+            </fieldset>
+
+            <fieldset>
+                <legend>Numéricos</legend>
+                <p>Campos para valores númericos: un número con límites (min/max) y un deslizador (range) para elegir un valor dentro de un rango.</p>
+
+            <label for=""> Númerico</label>
+            <input type="number">
+            <br>
+
+            <label for="">Rango</label>
+            <input type="range" min="0" max="100">
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+            </fieldset>
+
+            <fieldset>
+                <legend>Fecha y Hora</legend>
+                <p>Selectores nativos de fechha y hora: fecha, fecha y hora, combinadas, hora, semana del año y mes.</p>
+
+                <label for="">Fecha</label>
+                <input type="date">
+                <br>
+
+                <label for="">Fecha y Hora</label>
+                <input type="date">
+                <br>
+
+                <label for="">Hora</label>
+                <input type="time">
+                <br>
+
+                <label for="">Semana</label>
+                <input type="week">
+                <br>
+
+                <label for="">Mes</label>
+                <input type="month">
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selección</legend>
+                <p>Controles de selección: elegir un color, marcar una casilla, elegir una opción de un grupo de radios y subir un archivo.</p>
+
+                <label for="">Color</label>
+                <input type="color" name="" id="">
+                <br>
+
+                <label for="">Casilla de verificación</label>
+                <input type="checkbox">
+                <br>
+            
+                <label for="">Botón de radio</label>
+                <input type="radio">
+                <input type="radio">
+                <br>
+
+                <label for="">Archivo</label> <br>
+                <input type="file" placeholder="" name="" id="">
+                <br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </fieldset>
+
+            <fieldset>
+                <legend>Listas desplegables (select)</legend>
+                <p>Listas desplegables con el elemento select: una opción simple, una con valor preseleccionado (selected), una agrupada con optgroup, una de selección múltipl(multiple) y una deshabilitada (disabled)</p>
+            
+                <label for="">Select Simple</label>
+                <select name="" id="">Selecciona una opción
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option> 
+                </select>
+                <br>
+
+                <label for="">Select con opción seleccionada</label>
+                <select name="" id="">Selecciona una opción
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2" selected>Opción 2</option>
+                <option value="opcion3">Opción 3</option> 
+                </select>
+                <br>
+
+                <label for="">Select con grupos (optgroup)</label>
+                <select name="" id=""><optgroup label="Frutas">
+                    <option value="manzana">Manzana</option>
+                    <option value="pera">Pera</option>  
+                </optgroup>
+
+                <optgroup label="Verduras">
+                    <option value="zanahoria">Zanahora</option>
+                    <option value="lechuga">Lechuga</option>
+                </optgroup>
+                </select>
+                <br>
+
+                <label for="">Select múltiple</label>
+                <select name="" multiple>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
+                <br>
+
+                <label for="">Select deshabilitado</label>
+                <select name="" id="" disabled="disabled">
+                    <option value="opcion">Opción 1</option>
+                </select>
+
+
+                </fieldset>
+
+
+        </form>
+    </section>
+</main>
+
+    
+</body>
+</html>
