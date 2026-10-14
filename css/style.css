@@ -99,7 +99,7 @@ input, select {
 }
 
 input [type="checkbox"],
-input [type="radio"] {
+input[type="radio"] {
 width: auto;
 margin-right: 5px;
 }
@@ -143,4 +143,3 @@ input:disabled, select:disabled {
     background-color: #eee;
     cursor: not-allowed;
 }
-
